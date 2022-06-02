@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dropdown</title>
+    <link rel="stylesheet" href="../public/build/tailwind.css" />
+</head>
+
+<body class="bg-slate-100 flex justify-center items-center h-screen">
+    <div class="relative" x-data="{ isOpen: false }">
+        <div @click="isOpen = false" x-show="isOpen" class="w-full h-full opacity-0 fixed top-0 right-0"></div>
+        <button @click="isOpen = !isOpen"
+            class="px-4 py-2 z-20 relative bg-blue-500 rounded-lg text-white flex caret-transparent focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mt-1" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clip-rule="evenodd" />
+            </svg>
+            <span class="ml-1">دکمه کشویی</span>
+        </button>
+        <div x-show="isOpen"
+            class="bg-white text-right flex flex-col rounded-lg border overflow-hidden w-56 absolute top-12 right-0">
+            <a href="#" class="p-2 hover:bg-gray-100">پروفایل</a>
+            <a href="#" class="p-2 hover:bg-gray-100">داشبورد</a>
+            <a href="#" class="p-2 hover:bg-gray-100">گزارش‌ها</a>
+            <a href="#" class="p-2 hover:bg-gray-100">خروج</a>
+        </div>
+    </div>
+    <script src="//unpkg.com/alpinejs" defer></script>
+</body>
+
+</html>
