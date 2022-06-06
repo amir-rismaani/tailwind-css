@@ -424,95 +424,29 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
-.fixed {
-  position: fixed;
-}
-.absolute {
-  position: absolute;
-}
-.relative {
-  position: relative;
-}
-.right-0 {
-  right: 0px;
-}
-.left-0 {
-  left: 0px;
-}
-.top-2 {
-  top: 0.5rem;
-}
-.right-4 {
-  right: 1rem;
-}
-.top-20 {
-  top: 5rem;
-}
-.top-10 {
-  top: 2.5rem;
-}
-.top-12 {
-  top: 3rem;
-}
-.top-0 {
-  top: 0px;
-}
-.left-10 {
-  left: 2.5rem;
-}
-.right-10 {
-  right: 2.5rem;
-}
-.right-20 {
-  right: 5rem;
-}
-.top-3 {
-  top: 0.75rem;
-}
-.z-20 {
-  z-index: 20;
-}
-.z-10 {
-  z-index: 10;
-}
-.z-0 {
-  z-index: 0;
-}
-.mt-2 {
-  margin-top: 0.5rem;
-}
-.mt-1 {
-  margin-top: 0.25rem;
-}
-.ml-2 {
-  margin-left: 0.5rem;
-}
-.ml-1 {
-  margin-left: 0.25rem;
-}
 .flex {
   display: flex;
-}
-.hidden {
-  display: none;
-}
-.h-full {
-  height: 100%;
 }
 .h-screen {
   height: 100vh;
 }
-.h-5 {
-  height: 1.25rem;
+.h-8 {
+  height: 2rem;
+}
+.h-6 {
+  height: 1.5rem;
 }
 .w-full {
   width: 100%;
 }
-.w-5 {
-  width: 1.25rem;
+.w-8 {
+  width: 2rem;
 }
-.w-56 {
-  width: 14rem;
+.w-6 {
+  width: 1.5rem;
+}
+.max-w-md {
+  max-width: 28rem;
 }
 .cursor-pointer {
   cursor: pointer;
@@ -526,79 +460,31 @@ Ensure the default browser behavior of the `hidden` attribute.
 .justify-center {
   justify-content: center;
 }
-.overflow-hidden {
-  overflow: hidden;
+.justify-between {
+  justify-content: space-between;
 }
-.rounded-lg {
-  border-radius: 0.5rem;
+.gap-y-4 {
+  row-gap: 1rem;
 }
-.border {
-  border-width: 1px;
+.rounded-xl {
+  border-radius: 0.75rem;
 }
-.bg-slate-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(148 163 184 / var(--tw-bg-opacity));
-}
-.bg-blue-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(96 165 250 / var(--tw-bg-opacity));
+.rounded-full {
+  border-radius: 9999px;
 }
 .bg-blue-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(59 130 246 / var(--tw-bg-opacity));
 }
-.bg-slate-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
-}
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
-.bg-slate-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
+.p-4 {
+  padding: 1rem;
 }
-.bg-slate-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(226 232 240 / var(--tw-bg-opacity));
-}
-.bg-slate-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(203 213 225 / var(--tw-bg-opacity));
-}
-.bg-slate-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(71 85 105 / var(--tw-bg-opacity));
-}
-.bg-black {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-}
-.bg-gray-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(107 114 128 / var(--tw-bg-opacity));
-}
-.p-3 {
-  padding: 0.75rem;
-}
-.p-2 {
-  padding: 0.5rem;
-}
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-.py-2 {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-.text-right {
-  text-align: right;
+.font-bold {
+  font-weight: 700;
 }
 .text-white {
   --tw-text-opacity: 1;
@@ -607,58 +493,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 .caret-transparent {
   caret-color: transparent;
 }
-.opacity-50 {
-  opacity: 0.5;
-}
-.opacity-70 {
-  opacity: 0.7;
-}
-.opacity-60 {
-  opacity: 0.6;
-}
-.opacity-40 {
-  opacity: 0.4;
-}
-.opacity-30 {
-  opacity: 0.3;
-}
-.opacity-10 {
-  opacity: 0.1;
-}
-.opacity-20 {
-  opacity: 0.2;
-}
-.opacity-0 {
-  opacity: 0;
-}
-.hover\:bg-slate-500:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
-}
-.hover\:bg-gray-100:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
-}
-.focus\:outline-none:focus {
-  outline: 2px solid transparent;
-  outline-offset: 2px;
-}
-.focus\:ring-2:focus {
+.ring-4 {
   --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(4px + var(--tw-ring-offset-width)) var(--tw-ring-color);
   box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
 }
-.focus\:ring-blue-400:focus {
+.ring-blue-300 {
   --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(96 165 250 / var(--tw-ring-opacity));
-}
-.focus\:ring-blue-500:focus {
-  --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(59 130 246 / var(--tw-ring-opacity));
-}
-.focus\:ring-offset-2:focus {
-  --tw-ring-offset-width: 2px;
-}
-.focus\:ring-offset-white:focus {
-  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(147 197 253 / var(--tw-ring-opacity));
 }
