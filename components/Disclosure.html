@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../public/build/tailwind.css" />
+    <title>Accordion / Disclosure </title>
+</head>
+
+<body class="bg-blue-500 flex flex-col justify-start items-center h-screen">
+    <h2 class="text-white font-bold mt-20 mb-4">چند بخش می تواند باز باشد</h2>
+    <div class="bg-white w-full max-w-md rounded-xl p-4 flex flex-col gap-3">
+        <!-- Accordion One -->
+        <div x-data="{ active: false }">
+            <!-- Header -->
+            <div class="flex items-center justify-between bg-blue-100 p-2 rounded-xl cursor-pointer caret-transparent"
+                @click="active = !active">
+                <span class="font-bold text-sky-900">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</span>
+                <svg xmlns="http://www.w3.org/2000/svg" :class="active ? 'rotate-180' : ''"
+                    class="h-5 w-5 transition-all" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                        clip-rule="evenodd" />
+                </svg>
+            </div>
+            <!-- Content -->
+            <div class="p-3" x-show="active">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از
+                طراحان
+                گرافیک است،
+                چاپگرها و متون
+                بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و...
+            </div>
+        </div>
+        <!-- Accordion Two -->
+        <div x-data="{ active: false }">
+            <!-- Header -->
+            <div class="flex items-center justify-between bg-blue-100 p-2 rounded-xl cursor-pointer caret-transparent"
+                @click="active = !active">
+                <span class="font-bold text-sky-900">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</span>
+                <svg xmlns="http://www.w3.org/2000/svg" :class="active ? 'rotate-180' : ''"
+                    class="h-5 w-5 transition-all" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                        clip-rule="evenodd" />
+                </svg>
+            </div>
+            <!-- Content -->
+            <div class="p-3" x-show="active">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از
+                طراحان
+                گرافیک است،
+                چاپگرها و متون
+                بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و...
+            </div>
+        </div>
+
+    </div>
+
+    <h2 class="text-white font-bold mt-20 mb-4">تنها یک بخش می تواند باز باشد</h2>
+    <div class="bg-white w-full max-w-md rounded-xl p-4 flex flex-col gap-3" x-data="{ active: 0 }">
+        <!-- Accordion One -->
+        <div>
+            <!-- Header -->
+            <div class="flex items-center justify-between bg-blue-100 p-2 rounded-xl cursor-pointer caret-transparent"
+                @click="active = active === 1 ? 0 : 1 ">
+                <span class="font-bold text-sky-900">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</span>
+                <svg xmlns="http://www.w3.org/2000/svg" :class="active === 1 ? 'rotate-180' : ''"
+                    class="h-5 w-5 transition-all" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                        clip-rule="evenodd" />
+                </svg>
+            </div>
+            <!-- Content -->
+            <div class="p-3" x-show="active === 1">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                استفاده از
+                طراحان
+                گرافیک است،
+                چاپگرها و متون
+                بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و...
+            </div>
+        </div>
+        <!-- Accordion Two -->
+        <div>
+            <!-- Header -->
+            <div class="flex items-center justify-between bg-blue-100 p-2 rounded-xl cursor-pointer caret-transparent"
+                @click="active = active === 2 ? 0 : 2">
+                <span class="font-bold text-sky-900">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</span>
+                <svg xmlns="http://www.w3.org/2000/svg" :class="active === 2 ? 'rotate-180' : ''"
+                    class="h-5 w-5 transition-all" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                        clip-rule="evenodd" />
+                </svg>
+            </div>
+            <!-- Content -->
+            <div class="p-3" x-show="active === 2">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                استفاده از
+                طراحان
+                گرافیک است،
+                چاپگرها و متون
+                بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و...
+            </div>
+        </div>
+
+    </div>
+    <script src="//unpkg.com/alpinejs" defer></script>
+</body>
+
+</html>
