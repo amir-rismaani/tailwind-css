@@ -5,12 +5,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../public/build/tailwind.cs" />
+    <link rel="stylesheet" href="../public/build/tailwind.css" />
     <title>Radio</title>
 </head>
 
 <body class="bg-blue-500 flex justify-center items-center h-screen">
-    <!-- <h1>Tailwind CSS</h1> -->
     <div class="radio-group flex flex-col w-full max-w-md gap-y-4"
         x-data="{ radio: 1, activeClass: 'ring-4 ring-blue-300'}">
         <div @click="radio = 1" :class="radio === 1 ? activeClass : ''"
